@@ -13,6 +13,6 @@ public class EmployeeDto {
     private AddressDto address;
     private String email;
     private PhoneDto phone;
-    private double salary;
+    private SalaryDto salary;
     private EmployeeDto manager ;
 }

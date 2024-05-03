@@ -17,7 +17,7 @@ public class AddressController {
     @Autowired
     private AddressService addressService;
 
-    @GetMapping
+    @GetMapping("findAll")
     public ResponseEntity<List<AddressDto>> findAll() {
         List<AddressDto> addresses = addressService.findAll();
         return new ResponseEntity<>(addresses, HttpStatus.OK);
